@@ -1,0 +1,230 @@
+{
+    "en": {
+        "translation": {
+            "Date": "Date:",
+            "Duration": "Duration: ",
+            "Time": "Time: ",
+            "account": {
+                "short-intro": "You'll need a free account to save your progress.",
+                "short-intro-custom-data": "You'll need a free account to preserve your preferences",
+                "short-intro-progress": "With an account, you can easily transfer data to a new device.",
+                "sign-out": "Sign out",
+                "sign-up": "Log In or Sign Up"
+            },
+            "random": {
+                "affirmation": "Random affirmation",
+                "bell-aum": "Random AUM sound",
+                "chant": "Random chant",
+                "prayer-start": "Random starting prayer",
+                "prayer-end": "Random ending prayer",
+                "bell-bell": "Random bell",
+                "Prayer": "Prayer",
+                "voice": "Random talk"
+            },
+            "track_type": {
+                "Chant": "Chant",
+                "Prayer": "Pray",
+                "Affirm": "Affirm",
+                "Bell": "Bell",
+                "silence": "Silent",
+                "Voice": "Talk"
+            },
+            "background_type": {
+                "nature": "Nature",
+                "altar": "Altar",
+                "other": "Other",
+                "art": "Art",
+                "masters": "Masters"
+            },
+            "addJournalEntry": "Write a journal entry",
+            "appName": "Meditation",
+            "cancel": "Cancel",
+            "customSessions": {
+                "addButton": "Add a custom session",
+                "create": "Create Session",
+                "empty": "Create guided meditations experiences that are unique to you.",
+                "favourites": "Favourites",
+                "favouritesEmpty": "Add favourites by tapping on the heart on a session. Go ahead and try it now!",
+                "pickTrack": "Pick Track",
+                "title": "Custom Sessions"
+            },
+            "customSilentTimer": {
+                "custom": "Custom",
+                "title": "Silent Timer",
+                "withOpeningPrayer": "Opening Prayer",
+                "withOpeningChant": "Opening Chant",
+                "withClosingAffirmation": "Closing Affirmation",
+                "withClosingPrayer": "Closing Prayer",
+                "minutesTitle": "Minutes",
+                "includingTitle": "Including",
+                "extraTitle": "Extra bell part-way through the session",
+                "extraOptions": {
+                    "0": "None",
+                    "1": "⅔ through",
+                    "2": "¾ through"
+                },
+                "confirmButton": "Let's Meditate"
+            },
+            "donate": "Donate",
+            "home": {
+                "login": "Login",
+                "routeName": "Home",
+                "welcome": "Welcome to %{appName}!"
+            },
+            "homepage": {
+                "cannotLoadData": "Could not load the data. Please make sure that the internet is available.",
+                "others": "Others",
+                "silentMeditation": "Silent Timer",
+                "spiritualPractices": "Spiritual Practices"
+            },
+            "info": {
+                "account": "User Account",
+                "aboutSection": "About",
+                "about": "About This App and Device",
+                "donate": "Donate to support Ananda Meditation",
+                "feedback": "Send us an email",
+                "feedbackEmailSubject": "Feedback on the Meditation App",
+                "feedbackTitle": "Feedback",
+                "goToAppStore": "Go to the App Store",
+                "goToPlayStore": "Go to the Google Play Store",
+                "helpfulInformation": "Helpful Information:",
+                "inbox": "Inbox",
+                "learnToMeditate": "Learn more about meditation",
+                "learnToMeditateDetails": "Online and in-person classes, books, and videos",
+                "links": "Links",
+                "notLoggedIn": "Not logged in",
+                "otherApps": "Check other apps from Ananda",
+                "deleteAccountTitle": "Delete account",
+                "deleteAccount": "Delete your user account and data",
+                "deleteAccountAlertTitle": "Delete account",
+                "deleteAccountAlertBody": "This action will delete your user account and all of its associated data. Are you sure you want to proceed?",
+                "deleteAccountConfirmationTitle": "",
+                "deleteAccountConfirmationBody": "Your account has been deleted.",
+                "privacyPolicy": "Privacy Policy",
+                "pushButtonToLogout": "Push the button to remove all data and sign out from this device",
+                "pushButtonToSignUp": "Press the button to log in or sign up",
+                "title": "Info",
+                "version": "Version"
+            },
+            "journalEntry": "Journal Entry ",
+            "loading": "Loading",
+            "loggingIn": "Logging in",
+            "login": "Log in",
+            "logout": "Log out",
+            "missingPlaybackFile": "It seems the media file is missing.\n Would you please let us know about it so that we can fix this?",
+            "navigation": {
+                "addLog": "Add Log",
+                "home": "%{appName}",
+                "logEntry": "Log Entry",
+                "logs": "Logs",
+                "myThings": "My Things",
+                "seeLogs": "See Logs",
+                "settings": "Settings",
+                "statistics": "Statistics"
+            },
+            "noInternet": "No Internet",
+            "notification": {
+                "checkMore": "Check more",
+                "dismiss": "Dismiss",
+                "migration": {
+                    "message": "Thanks for updating the app!\nWe have migrated your meditation log and favourites. Hope you like the update.",
+                    "title": "Your data was migrated"
+                },
+                "signup": {
+                    "message": "Signing up allows you to syncronize your progress with our server, so that you never lose your data.",
+                    "title": "Sign up to preserve your progress",
+                    "yesButton": "Sign Up / Log In"
+                }
+            },
+            "ok": "OK",
+            "playback": {
+                "finish": "Finish"
+            },
+            "save": "Save",
+            "saveJournalEntry": "Save entry",
+            "session": {
+                "sendEmail": "Send Email",
+                "title": "Title",
+                "untitled": "Untitled"
+            },
+            "sessionCategories": {
+                "Affirm": "Affirm",
+                "Bell": "Bell",
+                "Chant": "Chant",
+                "Pray": "Pray",
+                "Voice": "Voice"
+            },
+            "sessionCreator": {
+                "addTrack": "Add Track",
+                "errorNoTracks": "You need to add at least 1 track before you can save!",
+                "noTracks": "No tracks",
+                "selectBackground": "Background",
+                "titleBlankError": "The title must not be blank"
+            },
+            "sessionPlayback": {
+                "dimScreen": "Dim screen",
+                "lightScreen": "Light screen"
+            },
+            "sessionPreview": {
+                "audioOnly": " (Audio only)",
+                "delete": "Delete session from local memory?",
+                "download": "Download {{mb}}?",
+                "downloadError": "Error",
+                "downloadProgress": "{{percent}}%"
+            },
+            "share": "Share",
+            "shareMessage": "I just finished meditating for {{duration}} with the Ananda Meditation app.",
+            "stats": {
+                "figures": "Figures",
+                "logEntryDate": "{{date,ll }}",
+                "logEntryTime": "{{time, LT}}",
+                "longestSession": "Longest session ",
+                "maxConsecutive": "Maximum consecutive days",
+                "notEnoughData": "Complete 3 or more sessions to see the statistics!",
+                "sectionDate": "{{date, MMMM YYYY}}",
+                "sectionDateShort": "{{date, M/YY}}",
+                "totalSessions": "Total sessions",
+                "totalTime": "Total time"
+            },
+            "time": {
+                "day": "day",
+                "day_plural": "days",
+                "hour": "hour",
+                "hour_plural": "hours",
+                "indefinite": "∞",
+                "minute": "minute",
+                "minute_plural": "minutes",
+                "second": "second",
+                "second_plural": "seconds",
+                "session": "session",
+                "session_plural": "sessions",
+                "shortHour": "h",
+                "shortMin": "min",
+                "shortSec": "s"
+            },
+            "track": {
+                "indefinite": "Indefinite time",
+                "setCountdown": "Set countdown",
+                "setIndefinite": "Set indefinite",
+                "silent": "Silent track",
+                "bell": "Bell"
+            },
+            "kriya": {
+                "what_is_kriya": "What Is Kriya Yoga?",
+                "description": "An ancient meditation technique of energy control, which Paramhansa Yogananda called \"the jet airplane route to God\".\n\nIt is also a comprehensive spiritual path which includes additional meditation practices and right living.",
+                "learn_more_button": "Learn More",
+                "for_kriyabans_title": "For Ananda Sangha Kriyabans",
+                "password": "Password",
+                "check_password": "Get Access",
+                "access_instructions": "If you received Kriya from Ananda, but don't have your login information, please email us with the following information:\n",
+                "access_instructions_list": "\u2022 Name\n\u2022 Street Address\n\u2022 City \n\u2022 State and Postal Code\n\u2022 Country\n\u2022 Email Address\n\u2022 When did you receive Kriya initiation from Ananda?\n\u2022 Where?\n\u2022 From whom?\n",
+                "access_instructions_send_email": "Send email to:\n",
+                "access_instructions_email_world": "(Everywhere except India)",
+                "access_instructions_email_india": "(India)",
+                "password_correct": "The password is correct",
+                "password_incorrect": "The password is not correct"
+            },
+            "unsupportedAppVersionMessage": "You are using an old app version.\nPlease update to the newest version to continue."
+        }
+    }
+}

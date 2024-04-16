@@ -7,9 +7,10 @@
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from './src/Base/Screens/SplashScreen';
-import TabNavStack from './src/Base/navigation/TabNavStack';
+
 import { PaperProvider } from 'react-native-paper';
+import TabNavStack from './src/Base/Navigation/TabNavStack';
+import SplashScreen from './src/Base/Screens/SplashScreen';
 
 function App(): React.JSX.Element {
 
