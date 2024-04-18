@@ -6,7 +6,7 @@ import MeditationLandingScreen from '../../Meditation/Screen/MeditationLandingSc
 import MyThingsLandingScreen from '../../MyThings/Screen/MyThingsLandingScreen';
 import KriyaLandingScreen from '../../Kriya/Screen/KriyaLandingScreen';
 import StatisticsLandingScreen from '../../Statistics/Screen/StatisticsLandingScreen';
-import InfoLandingScreen from '../../Info/Screen/InfoLandingScreen';
+import InfoLandingScreen from '../../Info/UI/Screen/InfoLandingScreen';
 
 
 

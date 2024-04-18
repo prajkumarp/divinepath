@@ -1,12 +1,20 @@
 import React, { useEffect } from 'react';
-import { View, Image, StyleSheet, Text } from 'react-native';
-import { colors, StatusBarHeight } from '../../Base/Styles/GlobalStyle';
+import { View, Image, StyleSheet, Text, Button } from 'react-native';
+import { colors, StatusBarHeight } from '../../../Base/Styles/GlobalStyle';
+import InfoViewController from '../../ViewControllers/InfoViewController';
 
 const InfoLandingScreen: React.FC = () => {
+
+  const {
+    statusText,
+    buttonPressed
+  } = InfoViewController();
+
   return (
     <View style={styles.base}>
       <View style={styles.container}>
-        <Text>Info</Text>
+        <Text>{statusText}</Text>
+        <Button title='Press this' onPress={buttonPressed} />
       </View>
     </View>
   );
