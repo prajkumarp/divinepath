@@ -10,7 +10,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { PaperProvider } from 'react-native-paper';
 import SplashScreen from "./src/Base/Screens/SplashScreen";
-import TabNavStack from "./src/Base/navigation/TabNavStack";
+import TabNavStack from "./src/Base/Navigation/TabNavStack";
 
 
 

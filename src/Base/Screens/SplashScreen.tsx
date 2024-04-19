@@ -24,7 +24,7 @@ const SplashScreen: React.FC = () => {
     <View style={styles.container}>
       <View style={styles.bganimationContainer}>
         <LottieView
-          source={require("../assets/lottie/PulsingYellow.json")}
+          source={require("../Resources/Lottie/PulsingYellow.json")}
           autoPlay
           loop={true}
           useNativeLooping={true}
@@ -34,7 +34,7 @@ const SplashScreen: React.FC = () => {
       <View style={styles.logoContainer}>
         <Image
           style={{ height: 125, width: 125, position: 'absolute' }}
-          source={require("../assets/Images/joy-logo.png")}
+          source={require("../Resources/Images/joy-logo.png")}
         />
       </View>
 
