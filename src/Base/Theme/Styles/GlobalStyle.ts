@@ -1,7 +1,6 @@
 import { StyleSheet, Dimensions, Platform, StatusBar } from 'react-native'
 import { moderateScale } from 'react-native-size-matters';
 import { colors } from '../Colors/GlobalColors';
-import { Barkentina } from '../../Resources/Fonts/';
 
 const X_WIDTH = 375
 const X_HEIGHT = 812
