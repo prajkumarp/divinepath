@@ -33,7 +33,7 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={{ version: 2 }}>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Splash">
           <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />

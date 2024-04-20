@@ -1,5 +1,6 @@
 
 
+
 // Colors
 export const colors = {
     lightBlue: '#3A7CE6',
@@ -19,4 +20,5 @@ export const colors = {
     orange: '#f69b31',
     red: '#F24E1E',
     green: '#3BAD87',
+    tabIconColor: '#ffffff',
 }

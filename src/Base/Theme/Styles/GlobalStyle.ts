@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions, Platform, StatusBar } from 'react-native'
 import { moderateScale } from 'react-native-size-matters';
 import { colors } from '../Colors/GlobalColors';
+import { Barkentina } from '../../Resources/Fonts/';
 
 const X_WIDTH = 375
 const X_HEIGHT = 812
@@ -19,7 +20,7 @@ const isIPhone = () =>
     : false
 
 export const StatusBarHeight = Platform.select({
-  ios: isIPhone() ? 44 : 60,
+  ios: isIPhone() ? 44 : 66,
   android: StatusBar.currentHeight,
   default: 0,
 })
@@ -62,13 +63,14 @@ export const iconSize = {
 
 export const globalStyle = StyleSheet.create({
   container: {
-    //marginHorizontal: 16,
+    marginHorizontal: 16,
     paddingHorizontal: 16,
     paddingTop: 8,
     width: '100%',
     height: '100%',
     alignSelf: 'center',
-    overflow: 'visible',
+    overflow: 'hidden',
+    backgroundColor: colors.white
   },
   roundedCornerPage: {
     backgroundColor: colors.lightGray,

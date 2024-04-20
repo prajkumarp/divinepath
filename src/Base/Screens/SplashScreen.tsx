@@ -15,7 +15,7 @@ const SplashScreen: React.FC = () => {
     // Simulate loading time
     const timer = setTimeout(() => {
       navigation.navigate('Tab')
-    }, 10000);
+    }, 2000);
     // Clear the timer to avoid memory leaks
     return () => clearTimeout(timer);
   }, []);

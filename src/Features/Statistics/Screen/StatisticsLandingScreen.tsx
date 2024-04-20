@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
-import { View, Image, StyleSheet, Text } from 'react-native';
+import React from 'react';
+import { View, StyleSheet, Text, SafeAreaView, ScrollView } from 'react-native';
 
-import { white } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 import { colors } from '../../../Base/Theme/Colors/GlobalColors';
-import { StatusBarHeight } from '../../../Base/Theme/Styles/GlobalStyle';
+import { globalStyle } from '../../../Base/Theme/Styles/GlobalStyle';
 
 const StatisticsLandingScreen: React.FC = () => {
   return (
-    <View style={styles.base}>
-      <View style={styles.container}>
-        <Text>Statistics</Text>
-      </View>
-    </View>
+    <SafeAreaView style={[{ backgroundColor: colors.electricBlue, overflow: 'hidden' }, { width: '100%', height: '100%', paddingBottom: 26 }]} >
+      <ScrollView style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
+        <View style={styles.container}>
+          <Text>Statistics</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -25,7 +26,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.white,
-    marginTop: StatusBarHeight
   },
   image: {
     width: 200,
