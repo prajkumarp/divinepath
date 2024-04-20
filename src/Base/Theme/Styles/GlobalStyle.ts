@@ -63,6 +63,7 @@ export const iconSize = {
 
 export const globalStyle = StyleSheet.create({
   container: {
+    marginTop:StatusBarHeight,
     marginHorizontal: 16,
     paddingHorizontal: 16,
     paddingTop: 8,

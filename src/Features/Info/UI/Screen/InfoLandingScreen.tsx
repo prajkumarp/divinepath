@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, Button, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, Button, TouchableOpacity, SafeAreaView, ScrollView, StatusBar } from 'react-native';
 import InfoViewController from '../../ViewControllers/InfoViewController';
 import { colors } from '../../../../Base/Theme/Colors/GlobalColors';
 import { globalStyle } from '../../../../Base/Theme/Styles/GlobalStyle';
@@ -15,9 +15,9 @@ const InfoLandingScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={[{ backgroundColor: colors.lightestBlue, overflow: 'hidden' }, { width: '100%', height: '100%', paddingBottom: 26 }]} >
+      <StatusBar/>
       <ScrollView style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
         <View style={styles.container}>
-
           <Text style={globalStyle.header}>{i18next.t('info.account')}</Text>
           <Text>{statusText}</Text>
           <TouchableOpacity style={globalStyle.button} onPress={buttonPressed}><Text>Press this</Text></TouchableOpacity>
@@ -34,14 +34,9 @@ const InfoLandingScreen: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: colors.white,
-  },
-  image: {
-    width: 200,
-    height: 200,
   },
 });
 export default InfoLandingScreen;

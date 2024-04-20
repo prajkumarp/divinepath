@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, SafeAreaView, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, SafeAreaView, ScrollView, StatusBar } from 'react-native';
 import { colors } from '../../../Base/Theme/Colors/GlobalColors';
 import { globalStyle } from '../../../Base/Theme/Styles/GlobalStyle';
 
@@ -7,6 +7,7 @@ import { globalStyle } from '../../../Base/Theme/Styles/GlobalStyle';
 const KriyaLandingScreen: React.FC = () => {
   return (
     <SafeAreaView style={[{ backgroundColor: colors.goldenYellow, overflow: 'hidden' }, { width: '100%', height: '100%', paddingBottom: 26 }]} >
+      <StatusBar/>
       <ScrollView style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
         <View style={styles.container}>
           <Text>Kriya</Text>
