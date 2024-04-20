@@ -2,9 +2,9 @@
 import { View, Image, StyleSheet, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
-import { colors } from '../Styles/GlobalStyle';
 import { ActivityIndicator } from 'react-native-paper';
 import { useEffect } from 'react';
+import { colors } from '../Theme/Colors/GlobalColors';
 
 
 const SplashScreen: React.FC = () => {

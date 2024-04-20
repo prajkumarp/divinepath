@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import { View, Image, StyleSheet, Text } from 'react-native';
-import { colors, StatusBarHeight } from '../../Base/Styles/GlobalStyle';
+import { colors } from '../../../Base/Theme/Colors/GlobalColors';
+import { StatusBarHeight } from '../../../Base/Theme/Styles/GlobalStyle';
 
-const KriyaLandingScreen: React.FC = () => {
+
+const MyThingsLandingScreen: React.FC = () => {
   return (
     <View style={styles.base}>
       <View style={styles.container}>
-        <Text>Kriya</Text>
+        <Text>My Things</Text>
       </View>
     </View>
   );
@@ -15,7 +17,7 @@ const KriyaLandingScreen: React.FC = () => {
 const styles = StyleSheet.create({
   base: {
     flex: 1,
-    backgroundColor: colors.goldenYellow,
+    backgroundColor: colors.electricBlue,
   },
   container: {
     flex: 1,
@@ -30,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default KriyaLandingScreen;
+export default MyThingsLandingScreen;

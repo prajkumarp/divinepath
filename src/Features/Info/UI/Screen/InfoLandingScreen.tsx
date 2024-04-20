@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { View, Image, StyleSheet, Text, Button } from 'react-native';
-import { colors, StatusBarHeight } from '../../../Base/Styles/GlobalStyle';
+import { View, Image, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
 import InfoViewController from '../../ViewControllers/InfoViewController';
+import { colors } from '../../../../Base/Theme/Colors/GlobalColors';
+import { globalStyle, StatusBarHeight } from '../../../../Base/Theme/Styles/GlobalStyle';
 
 const InfoLandingScreen: React.FC = () => {
 
@@ -14,6 +15,7 @@ const InfoLandingScreen: React.FC = () => {
     <View style={styles.base}>
       <View style={styles.container}>
         <Text>{statusText}</Text>
+        <TouchableOpacity style={globalStyle.button} onPress={buttonPressed}><Text>Press this</Text></TouchableOpacity>
         <Button title='Press this' onPress={buttonPressed} />
       </View>
     </View>

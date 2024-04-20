@@ -2,11 +2,11 @@
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 
 // Screens
-import MeditationLandingScreen from '../../Meditation/Screen/MeditationLandingScreen';
-import MyThingsLandingScreen from '../../MyThings/Screen/MyThingsLandingScreen';
-import KriyaLandingScreen from '../../Kriya/Screen/KriyaLandingScreen';
-import StatisticsLandingScreen from '../../Statistics/Screen/StatisticsLandingScreen';
-import InfoLandingScreen from '../../Info/UI/Screen/InfoLandingScreen';
+import MeditationLandingScreen from '../../Features/Meditation/Screen/MeditationLandingScreen';
+import MyThingsLandingScreen from '../../Features/MyThings/Screen/MyThingsLandingScreen';
+import KriyaLandingScreen from '../../Features/Kriya/Screen/KriyaLandingScreen';
+import StatisticsLandingScreen from '../../Features/Statistics/Screen/StatisticsLandingScreen';
+import InfoLandingScreen from '../../Features/Info/UI/Screen/InfoLandingScreen';
 
 
 

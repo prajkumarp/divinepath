@@ -1,5 +1,6 @@
 import { StyleSheet, Dimensions, Platform, StatusBar } from 'react-native'
 import { moderateScale } from 'react-native-size-matters';
+import { colors } from '../Colors/GlobalColors';
 
 const X_WIDTH = 375
 const X_HEIGHT = 812
@@ -23,7 +24,6 @@ export const StatusBarHeight = Platform.select({
   default: 0,
 })
 
-
 const isPortrait = () => {
   const dim = Dimensions.get('window')
   return dim.height >= dim.width
@@ -36,27 +36,6 @@ const isLargeScreen = () => {
   } else {
     return height > 600
   }
-}
-
-// Colors
-export const colors = {
-  lightBlue: '#3A7CE6',
-  lightestBlue: '#3388CC',
-  electricBlue: '#2A388F',
-  blueTransparent: '#3A7CE699',
-  lightGray: '#FAFAFA',
-  blackTransparent: '#0000007f',
-  gray: '#00000077',
-  white: '#ffffff',
-  transparentWhite: '#FFFFFF88',
-  black: '#1a1917f0',
-  almostBlack: '#00003199',
-  semiTransparentGray: '#cccccfdd',
-  almostTransparentGray: '#cacccc99',
-  goldenYellow: '#F2BF27',
-  orange: '#f69b31',
-  red: '#F24E1E',
-  green: '#3BAD87',
 }
 
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window')

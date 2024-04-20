@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import { View, Image, StyleSheet, Text } from 'react-native';
-import { colors, StatusBarHeight } from '../../Base/Styles/GlobalStyle';
-import { white } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
+import { colors } from '../../../Base/Theme/Colors/GlobalColors';
+import { StatusBarHeight } from '../../../Base/Theme/Styles/GlobalStyle';
 
-const StatisticsLandingScreen: React.FC = () => {
+
+const MeditationLandingScreen: React.FC = () => {
   return (
     <View style={styles.base}>
       <View style={styles.container}>
-        <Text>Statistics</Text>
+        <Text>Meditation</Text>
       </View>
     </View>
   );
@@ -16,7 +17,7 @@ const StatisticsLandingScreen: React.FC = () => {
 const styles = StyleSheet.create({
   base: {
     flex: 1,
-    backgroundColor: colors.electricBlue,
+    backgroundColor: colors.lightestBlue,
   },
   container: {
     flex: 1,
@@ -31,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StatisticsLandingScreen;
+export default MeditationLandingScreen;
