@@ -52,7 +52,4 @@ target 'AnandaMeditationApp' do
       :mac_catalyst_enabled => false
     )
   end
-
-  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
-  
 end
