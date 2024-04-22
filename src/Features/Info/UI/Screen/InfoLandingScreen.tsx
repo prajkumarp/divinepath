@@ -15,16 +15,16 @@ const InfoLandingScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={[{ backgroundColor: colors.lightestBlue, overflow: 'hidden' }, { width: '100%', height: '100%', paddingBottom: 26 }]} >
-      <StatusBar/>
+      <StatusBar animated={true} showHideTransition='slide' networkActivityIndicatorVisible={true} />
       <ScrollView style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
 
         <View style={styles.container}>
           <Text style={globalStyle.header}>{i18next.t('info.account')}</Text>
-          <Text style={{paddingTop:10}}>{statusText}</Text>
-          <View style={{paddingTop:10}}>
+          <Text style={{ paddingTop: 10 }}>{statusText}</Text>
+          <View style={{ paddingTop: 10 }}>
             <Button title='Press this' onPress={buttonPressed} />
           </View>
-          <Text style={{paddingTop:10}}>{i18next.t('info.title')}</Text>
+          <Text style={{ paddingTop: 10 }}>{i18next.t('info.title')}</Text>
           <View style={globalStyle.categoryContainerLast}>
             <DonateWidget />
           </View>

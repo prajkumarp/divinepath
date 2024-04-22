@@ -29,10 +29,10 @@ const TabNavStack: React.FC = () => {
 
         <Tab.Navigator
             initialRouteName="Meditation"
-            shifting={true}
-            activeColor={colors.white}
+            // shifting={true}
+            activeColor={colors.tabIconColor}
             inactiveColor={colors.transparentWhite}
-            barStyle={{ backgroundColor: colors.lightBlue }}
+        // barStyle={{ backgroundColor: colors.lightBlue }}
         >
             <Tab.Screen name="Meditation" component={MeditationLandingScreen}
                 options={{
@@ -67,7 +67,7 @@ const TabNavStack: React.FC = () => {
                     tabBarLabel: 'Kriya',
                     tabBarIcon: ({ focused }) => (
                         <View>
-                            <Image style={[globalStyle.smallLogo, !focused && { opacity: 1 }]} source={require('../../Base/Resources/Images/rose-small.png')} />
+                            <Image style={[globalStyle.smallLogo, !focused && { opacity: 1.0 }]} source={require('../../Base/Resources/Images/rose-small.png')} />
                         </View>
                     ),
                 }} />

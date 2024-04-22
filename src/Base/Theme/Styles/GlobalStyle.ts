@@ -19,7 +19,8 @@ const isIPhone = () =>
     : false
 
 export const StatusBarHeight = Platform.select({
-  ios: isIPhone() ? 44 : 66,
+  // ios: isIPhone() ? 44 : 20,
+  ios: StatusBar.currentHeight,
   android: StatusBar.currentHeight,
   default: 0,
 })
@@ -62,7 +63,7 @@ export const iconSize = {
 
 export const globalStyle = StyleSheet.create({
   container: {
-    marginTop:StatusBarHeight,
+    marginTop: StatusBarHeight,
     marginHorizontal: 16,
     paddingHorizontal: 16,
     paddingTop: 8,
@@ -179,7 +180,9 @@ export const globalStyle = StyleSheet.create({
   smallLogo: {
     width: iconSize.small,
     height: iconSize.small,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+    tintColor: colors.white,
+    opacity: 1
   },
   cardSmall: {
     backgroundColor: colors.lightBlue,
