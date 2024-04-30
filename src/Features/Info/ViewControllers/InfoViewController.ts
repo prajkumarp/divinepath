@@ -7,6 +7,9 @@ const InfoViewController = () => {
 
     const [statusText, setStatusText] = useState('Start')
 
+    const handleLogin = () => {
+        console.log('Login Button Pressed');
+    };
     const {
         clickState,
         buttonPressed
@@ -26,7 +29,8 @@ const InfoViewController = () => {
 
     return {
         statusText,
-        buttonPressed
+        buttonPressed,
+        handleLogin,
     }
 
 }

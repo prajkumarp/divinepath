@@ -7,10 +7,21 @@ import { globalStyle } from '../../../Base/Theme/Styles/GlobalStyle';
 const MyThingsLandingScreen: React.FC = () => {
   return (
     <SafeAreaView style={[{ backgroundColor: colors.electricBlue, overflow: 'hidden' }, { width: '100%', height: '100%', paddingBottom: 26 }]} >
-      <ScrollView style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
-        <View style={styles.container}>
-          <Text>My things</Text>
-        </View>
+            <ScrollView horizontal = {true} style={globalStyle.container} keyboardShouldPersistTaps={"handled"}>
+     
+        
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}></Text>
+          <Text style={styles.circle}>' 9 '</Text>
+          
+          
       </ScrollView>
     </SafeAreaView>
   );
@@ -30,6 +41,14 @@ const styles = StyleSheet.create({
   image: {
     width: 200,
     height: 200,
+  },
+  circle :{
+    height : 120 ,
+    width : 120,
+    marginRight: 20,
+    backgroundColor : colors.white,
+    borderRadius :80,
+    elevation : 8,
   },
 });
 
