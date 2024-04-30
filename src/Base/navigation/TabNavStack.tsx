@@ -2,13 +2,8 @@
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 
 // Screens
-import MeditationLandingScreen from '../../Features/Meditation/Screen/MeditationLandingScreen';
-import MyThingsLandingScreen from '../../Features/MyThings/Screen/MyThingsLandingScreen';
-import KriyaLandingScreen from '../../Features/Kriya/Screen/KriyaLandingScreen';
-import StatisticsLandingScreen from '../../Features/Statistics/Screen/StatisticsLandingScreen';
 import InfoLandingScreen from '../../Features/Info/UI/Screen/InfoLandingScreen';
 import { colors } from '../Theme/Colors/GlobalColors';
-import { lightBlue100 } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { Image, View } from 'react-native';
 import { globalStyle, iconSize } from '../Theme/Styles/GlobalStyle';
@@ -16,8 +11,10 @@ import i18next from '../../Base/Resources/Translations/i18n';
 import { faInfoCircle as faInfoCircle } from '@fortawesome/pro-light-svg-icons'
 import { faUser as faUser } from '@fortawesome/pro-light-svg-icons';
 import { faChartBar as faChartBar } from '@fortawesome/pro-light-svg-icons';
-
-
+import KriyaNavStack from '../../Features/Kriya/Navigation/KriyaNavStack';
+import MeditationNavStack from '../../Features/Meditation/Navigation/MeditationNavStack';
+import MyThingsNavStack from '../../Features/MyThings/Navigation/MyThingsNavStack';
+import StatisticsNavStack from '../../Features/Statistics/Navigation/StatisticsNavStack';
 
 
 const TabNavStack: React.FC = () => {
@@ -34,7 +31,7 @@ const TabNavStack: React.FC = () => {
             inactiveColor={colors.transparentWhite}
         // barStyle={{ backgroundColor: colors.lightBlue }}
         >
-            <Tab.Screen name="Meditation" component={MeditationLandingScreen}
+            <Tab.Screen name="Meditation" component={MeditationNavStack}
                 options={{
                     tabBarColor: colors.lightestBlue,
                     tabBarLabel: i18next.t('appName'),
@@ -47,7 +44,7 @@ const TabNavStack: React.FC = () => {
                         </View>
                     ),
                 }} />
-            <Tab.Screen name="My Things" component={MyThingsLandingScreen}
+            <Tab.Screen name="My Things" component={MyThingsNavStack}
                 options={{
                     tabBarColor: colors.electricBlue,
                     tabBarLabel: 'My Things',
@@ -61,7 +58,7 @@ const TabNavStack: React.FC = () => {
                         </View>
                     ),
                 }} />
-            <Tab.Screen name="Kriya" component={KriyaLandingScreen}
+            <Tab.Screen name="Kriya" component={KriyaNavStack}
                 options={{
                     tabBarColor: colors.goldenYellow,
                     tabBarLabel: 'Kriya',
@@ -71,7 +68,7 @@ const TabNavStack: React.FC = () => {
                         </View>
                     ),
                 }} />
-            <Tab.Screen name="Statistics" component={StatisticsLandingScreen}
+            <Tab.Screen name="Statistics" component={StatisticsNavStack}
                 options={{
                     tabBarColor: colors.electricBlue,
                     tabBarLabel: i18next.t('navigation.statistics'),
