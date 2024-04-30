@@ -11,10 +11,12 @@ import i18next from '../../Base/Resources/Translations/i18n';
 import { faInfoCircle as faInfoCircle } from '@fortawesome/pro-light-svg-icons'
 import { faUser as faUser } from '@fortawesome/pro-light-svg-icons';
 import { faChartBar as faChartBar } from '@fortawesome/pro-light-svg-icons';
+import { faTools as faTools } from '@fortawesome/pro-light-svg-icons';
 import KriyaNavStack from '../../Features/Kriya/Navigation/KriyaNavStack';
 import MeditationNavStack from '../../Features/Meditation/Navigation/MeditationNavStack';
 import MyThingsNavStack from '../../Features/MyThings/Navigation/MyThingsNavStack';
 import StatisticsNavStack from '../../Features/Statistics/Navigation/StatisticsNavStack';
+import TestingNavStack from '../../Features/Testing/Navigation/TestingNavStack';
 
 
 const TabNavStack: React.FC = () => {
@@ -91,6 +93,21 @@ const TabNavStack: React.FC = () => {
                             <FontAwesomeIcon
                                 // icon={['fal', 'info-circle']}
                                 icon={faInfoCircle}
+                                style={{ color: colors.tabIconColor }}
+                                size={iconSize.small}
+                            />
+                        </View>
+                    ),
+                }} />
+            <Tab.Screen name="Testing" component={TestingNavStack}
+                options={{
+                    tabBarColor: colors.black,
+                    tabBarLabel: "Testing",
+                    tabBarIcon: () => (
+                        <View>
+                            <FontAwesomeIcon
+                                // icon={['fal', 'info-circle']}
+                                icon={faTools}
                                 style={{ color: colors.tabIconColor }}
                                 size={iconSize.small}
                             />

@@ -4,6 +4,7 @@ import NetInfo, { NetInfoState, NetInfoSubscription } from '@react-native-commun
 class NetworkService {
     private isConnected: boolean = true;
     private netInfoSubscription?: NetInfoSubscription;
+    private stateInformation?: NetInfoState;
 
     constructor() {
         this.handleConnectivityChange = this.handleConnectivityChange.bind(this);
@@ -12,7 +13,9 @@ class NetworkService {
     handleConnectivityChange(state: NetInfoState) {
         this.isConnected = state.isConnected ?? false;
         // Perform actions based on connectivity change here
+        this.stateInformation = state
         console.log('Network connectivity changed:', this.isConnected ? 'Connected' : 'Disconnected');
+
     }
 
     startMonitoring() {
@@ -28,6 +31,11 @@ class NetworkService {
 
     getConnectionStatus(): boolean {
         return this.isConnected;
+    }
+
+    getConnectionInfo(): NetInfoState["details"] {
+
+        return this.stateInformation!.details;
     }
 }
 
